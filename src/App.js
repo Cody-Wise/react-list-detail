@@ -10,10 +10,10 @@ export default function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/about">
+          <Route exact path="/">
             <PresidentPage />
           </Route>
-          <Route exact path="/users">
+          <Route exact path="/presidents:id">
             <PresidentDetail />
           </Route>
         </Switch>
