@@ -7,12 +7,12 @@ export default function PresidentPage() {
   const [presidents, setPresidents] = useState([]);
   const [page, setPage] = useState(1);
   const [lastPage, setLastPage] = useState('');
-  const perPage = 9;
+  const perPage = 10;
 
   useEffect(() => {
     async function fetch() {
       const from = page * perPage - perPage;
-      const to = page * perPage;
+      const to = page * perPage - 1;
       const presidente = await getPresidents(from, to);
 
       setLastPage(presidente.lastPage);
