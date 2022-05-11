@@ -28,6 +28,26 @@
   color: #61dafb;
 }
 
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.president-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.president-single {
+  width: 350px;
+  text-decoration: none;
+}
+
+.president-single img {
+  height: 300px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
