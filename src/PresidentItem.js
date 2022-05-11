@@ -7,12 +7,6 @@ export default function PresidentItem({ president }) {
         <h3>{president.president_name}</h3>
         <img src={president.image} />
         <h4>{president.number} President</h4>
-        <p>
-          <b>Years In Office:</b> {president.years_in_office}
-        </p>
-        <p>
-          <b>Political Party:</b> {president.party}
-        </p>
       </Link>
     </div>
   );
